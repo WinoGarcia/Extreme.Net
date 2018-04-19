@@ -3,6 +3,7 @@ using System.Net.Sockets;
 using System.Security;
 using System.Text;
 using System.Threading;
+using Extreme.Net.Core;
 
 namespace Extreme.Net
 {
@@ -414,7 +415,7 @@ namespace Extreme.Net
         /// <exception cref="System.ArgumentNullException">Значение параметра <paramref name="destinationHost"/> равно <see langword="null"/>.</exception>
         /// <exception cref="System.ArgumentException">Значение параметра <paramref name="destinationHost"/> является пустой строкой.</exception>
         /// <exception cref="System.ArgumentOutOfRangeException">Значение параметра <paramref name="destinationPort"/> меньше 1 или больше 65535.</exception>
-        /// <exception cref="Extreme.Net.Net.ProxyException">Ошибка при работе с прокси-сервером.</exception>
+        /// <exception cref="ProxyException">Ошибка при работе с прокси-сервером.</exception>
         public abstract TcpClient CreateConnection(string destinationHost, int destinationPort, TcpClient tcpClient = null);
 
 
@@ -513,7 +514,7 @@ namespace Extreme.Net
         /// Создаёт соединение с прокси-сервером.
         /// </summary>
         /// <returns>Соединение с прокси-сервером.</returns>
-        /// <exception cref="Extreme.Net.Net.ProxyException">Ошибка при работе с прокси-сервером.</exception>
+        /// <exception cref="ProxyException">Ошибка при работе с прокси-сервером.</exception>
         protected TcpClient CreateConnectionToProxy()
         {
             TcpClient tcpClient = null;

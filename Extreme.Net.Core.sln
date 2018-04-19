@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27309.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extreme.Net.Core", "Extreme.Net.Core.csproj", "{5D25D06E-0D35-42EF-BBA2-D5DE6E06CD04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extreme.Net.Core", "Extreme.Net.Core\Extreme.Net.Core.csproj", "{70B1D18A-5DE7-445A-AEDC-2A88EAA039FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5D25D06E-0D35-42EF-BBA2-D5DE6E06CD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D25D06E-0D35-42EF-BBA2-D5DE6E06CD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D25D06E-0D35-42EF-BBA2-D5DE6E06CD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D25D06E-0D35-42EF-BBA2-D5DE6E06CD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B1D18A-5DE7-445A-AEDC-2A88EAA039FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B1D18A-5DE7-445A-AEDC-2A88EAA039FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B1D18A-5DE7-445A-AEDC-2A88EAA039FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B1D18A-5DE7-445A-AEDC-2A88EAA039FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

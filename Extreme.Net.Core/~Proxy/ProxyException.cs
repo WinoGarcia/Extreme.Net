@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 using System.Security.Permissions;
+using Extreme.Net.Core;
 
 namespace Extreme.Net
 {
@@ -32,7 +33,7 @@ namespace Extreme.Net
             : base(message, innerException) { }
 
         /// <summary>
-        /// Инициализирует новый экземпляр класса <see cref="Extreme.Net.Net.ProxyException"/> заданным сообщением об ошибке и прокси-клиентом.
+        /// Инициализирует новый экземпляр класса <see cref="ProxyException"/> заданным сообщением об ошибке и прокси-клиентом.
         /// </summary>
         /// <param name="message">Сообщение об ошибке с объяснением причины исключения.</param>
         /// <param name="proxyClient">Прокси-клиент, в котором произошла ошибка.</param>

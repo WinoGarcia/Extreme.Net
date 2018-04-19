@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using Extreme.Net.Core;
 
 namespace Extreme.Net
 {

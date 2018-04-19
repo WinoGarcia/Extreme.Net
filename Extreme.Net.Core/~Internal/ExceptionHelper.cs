@@ -1,4 +1,5 @@
 ﻿using System;
+using Extreme.Net.Core;
 
 namespace Extreme.Net
 {

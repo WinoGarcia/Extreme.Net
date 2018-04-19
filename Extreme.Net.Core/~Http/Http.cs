@@ -5,6 +5,8 @@ using System.Security;
 using System.Text;
 using Microsoft.Win32;
 using System.Net.Security;
+using Extreme.Net.Core._Helpers;
+
 
 namespace Extreme.Net
 {
@@ -289,29 +291,11 @@ namespace Extreme.Net
         {
             string mediaType = "application/octet-stream";
 
-            try
+            var mimeByExtension = MimeTypeMap.GetMimeType(extension);
+            if (String.IsNullOrEmpty(mimeByExtension))
             {
-                using (var regKey = Registry.ClassesRoot.OpenSubKey(extension))
-                {
-                    if (regKey != null)
-                    {
-                        object keyValue = regKey.GetValue("Content Type");
-
-                        if (keyValue != null)
-                        {
-                            mediaType = keyValue.ToString();
-                        }
-                    }
-                }
+                mediaType = mimeByExtension;
             }
-            #region Catch's
-
-            catch (IOException) { }
-            catch (ObjectDisposedException) { }
-            catch (UnauthorizedAccessException) { }
-            catch (SecurityException) { }
-
-            #endregion
 
             return mediaType;
         }
