@@ -2951,8 +2951,7 @@ namespace Extreme.Net
                     {
                         sslStream = new SslStream(_connectionNetworkStream, false, SslCertificateValidatorCallback);
                     }
-
-                    sslStream.AuthenticateAsClient(address.Host);
+                    sslStream.AuthenticateAsClient(address.Host, null, SslProtocols.Ssl3 | SslProtocols.Tls12 | SslProtocols.Tls | SslProtocols.Tls11, false);
                     _connectionCommonStream = sslStream;
                 }
                 catch (Exception ex)

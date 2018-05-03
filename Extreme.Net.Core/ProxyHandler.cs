@@ -22,9 +22,9 @@ namespace Extreme.Net
             HttpResponseMessage response = null;
             HttpResponse httpResponse;
 
-            var httpRequest   = request.ToHttpRequest();
+            var httpRequest  = request.ToHttpRequest();
             httpRequest.Proxy = proxyClient;
-
+            httpRequest.SslCertificateValidatorCallback += (sender, certificate, chain, errors) => true;
             cancellationToken.ThrowIfCancellationRequested();
 
             if (request.Method == System.Net.Http.HttpMethod.Get)
